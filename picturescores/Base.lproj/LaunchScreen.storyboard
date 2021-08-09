@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-Em-CMk">
-                                <rect key="frame" x="115" y="402" width="184" height="27"/>
+                                <rect key="frame" x="115" y="348" width="184" height="27"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="lT7-Pq-sUS"/>
+                                    <constraint firstAttribute="height" constant="27" id="Gdw-mA-LHJ"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="by">
@@ -77,11 +77,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-lh-09n">
-                                <rect key="frame" x="87" y="228" width="240" height="62"/>
+                                <rect key="frame" x="87" y="211" width="240" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="2Bg-TS-KP7"/>
+                                    <constraint firstAttribute="height" constant="62" id="jXQ-5f-DYW"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="picturescores">
@@ -105,11 +105,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hCa-lh-09n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Py9-8Y-PJV"/>
-                            <constraint firstItem="hCa-lh-09n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="184" id="ZRc-Ga-GOb"/>
-                            <constraint firstItem="hCa-lh-09n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="iKD-Ps-pjh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5qL-Em-CMk" secondAttribute="bottom" constant="433" id="vQd-ZZ-CCt"/>
-                            <constraint firstItem="hCa-lh-09n" firstAttribute="centerX" secondItem="5qL-Em-CMk" secondAttribute="centerX" id="xXD-D4-ofA"/>
+                            <constraint firstItem="hCa-lh-09n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="167" id="Aa5-Wf-mAJ"/>
+                            <constraint firstItem="hCa-lh-09n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UpL-l7-SYf"/>
+                            <constraint firstItem="5qL-Em-CMk" firstAttribute="top" secondItem="hCa-lh-09n" secondAttribute="bottom" constant="75" id="hJn-WB-ehB"/>
+                            <constraint firstItem="hCa-lh-09n" firstAttribute="centerX" secondItem="5qL-Em-CMk" secondAttribute="centerX" id="hVQ-57-vUv"/>
+                            <constraint firstItem="hCa-lh-09n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="z56-vl-5cE"/>
                         </constraints>
                     </view>
                 </viewController>
