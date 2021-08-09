@@ -10,7 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var artworkDesc: UITextView!
-    @IBOutlet var locationLink: UITextView!
+    @IBOutlet var locationLink: UIButton!
     @IBOutlet var contactLink: UITextView!
     @IBOutlet var audioSwitch: UISwitch!
     
@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         artworkDesc.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
-        locationLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
+//        locationLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
         contactLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
         //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         navigationController?.navigationBar.prefersLargeTitles = false
@@ -67,20 +67,20 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnTap = false
     }
     
-    @objc func shareTapped() {
-        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
-            print("No image found")
-            return
-        }
-        guard let location = locationLink.text else {
-            print("No location found")
-            return
-        }
-
-        let vc = UIActivityViewController(activityItems: [image, location], applicationActivities: [])
-        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
-        present(vc, animated: true)
-    }
+//    @objc func shareTapped() {
+//        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
+//            print("No image found")
+//            return
+//        }
+//        guard let location = locationLink.text else {
+//            print("No location found")
+//            return
+//        }
+//
+//        let vc = UIActivityViewController(activityItems: [image, location], applicationActivities: [])
+//        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+//        present(vc, animated: true)
+//    }
     
     @IBAction func switchChanged(_ sender: Any) {
         if audioSwitch.isOn {
@@ -129,7 +129,7 @@ class DetailViewController: UIViewController {
         return artworkDesc
     }
 
-    private func getLocationCoords(artworkName: String)-> UITextView{
+    private func getLocationCoords(artworkName: String)-> UIButton{
         let lowerTitle = artworkName.lowercased()
         var coords = "40.057357,-109.3932191"
         if lowerTitle.contains("1"){
@@ -157,18 +157,16 @@ class DetailViewController: UIViewController {
             coords = "40.057357,-109.3932191"
         }
         locationLink.isUserInteractionEnabled = true
-        let locationString = "Map \(coords)"
-        let stringLength = locationString.count
-        let locationAttString = NSMutableAttributedString(string: locationString)
-        locationAttString.addAttribute(.link, value: "https://goo.gl/maps/JfWfKVineH1wZ6Vk6", range: NSRange(location: 0, length: stringLength))
-        locationLink.attributedText = locationAttString
+        let locationString = "Map Location"
+        locationLink.setTitle(locationString, for: .normal)
         return locationLink
     }
     
-    func locationLink(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        UIApplication.shared.open(URL)
-        return false
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        let url = URL(string: "https://goo.gl/maps/JfWfKVineH1wZ6Vk6")!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
+
 
     private func getContactInfo(artworkTitle: String)-> UITextView{
         contactLink.isUserInteractionEnabled = true

@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,10 +13,10 @@
             <objects>
                 <tableViewController modalTransitionStyle="partialCurl" id="uUd-jk-z5a" customClass="ViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="WJt-U6-5tP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Picture" textLabel="joT-XD-PIS" imageView="JTh-d9-cBT" style="IBUITableViewCellStyleDefault" id="6gc-nS-w33">
                                 <rect key="frame" x="20" y="49.5" width="374" height="54"/>
@@ -40,8 +39,8 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,7 +48,7 @@
                             <outlet property="delegate" destination="uUd-jk-z5a" id="RNL-w8-XQr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="2cm-Xs-qLL"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="2cm-Xs-qLL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BY8-YP-pxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,12 +57,14 @@
         <!--Navigation Controller-->
         <scene sceneID="giz-tJ-JMQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="JGg-zS-QRk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="partialCurl" id="JGg-zS-QRk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lMK-of-lpW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" backIndicatorImage="chevron.backward" catalog="system" largeTitles="YES" id="lMK-of-lpW">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XXe-m2-kal">
@@ -88,33 +89,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="biM-B3-tw3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="491"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" playsSound="YES"/>
                                 </accessibility>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-my-fEB">
-                                <rect key="frame" x="20" y="830" width="265" height="38"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="gBO-el-Xlv"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="contactLink">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-mO-BkM">
-                                <rect key="frame" x="20" y="547" width="374" height="275"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="499" width="394" height="211"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Artwork Title">
                                         <attributes>
@@ -126,62 +111,68 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Audio" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41P-G2-gsG">
-                                <rect key="frame" x="238" y="509" width="92" height="22"/>
+                            <switch clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="top" on="YES" title="Audio" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-x5-oKE">
+                                <rect key="frame" x="39" y="810" width="51" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Contact link" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pC1-aU-N7A">
+                                <rect key="frame" x="258" y="760" width="136" height="28"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="pdk-Y6-AGV"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-ep-jey">
-                                <rect key="frame" x="20" y="499" width="250" height="32"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="locationLink">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <switch clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="top" on="YES" title="Audio" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-x5-oKE">
-                                <rect key="frame" x="345" y="499" width="51" height="31"/>
-                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
-                                <color key="onTintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sam-7l-N7I">
+                                <rect key="frame" x="39" y="760" width="100" height="26"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="14"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Map Location" image="location.north.line.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BjT-sJ-PH8" eventType="touchUpInside" id="604-xB-Vsh"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker.wave.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rOp-1Q-IHw">
+                                <rect key="frame" x="111" y="805.5" width="28" height="38"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fXb-1N-VEY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G8D-x5-oKE" firstAttribute="leading" secondItem="Idt-ep-jey" secondAttribute="trailing" constant="75" id="1mK-CZ-oyr"/>
-                            <constraint firstItem="fXb-1N-VEY" firstAttribute="trailing" secondItem="QFD-my-fEB" secondAttribute="trailing" constant="129" id="5ud-rs-srC"/>
-                            <constraint firstItem="QFD-my-fEB" firstAttribute="top" secondItem="fBg-mO-BkM" secondAttribute="bottom" constant="8" id="Ce3-bd-nSD"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="QFD-my-fEB" secondAttribute="leading" id="GgM-es-x9n"/>
-                            <constraint firstItem="G8D-x5-oKE" firstAttribute="leading" secondItem="41P-G2-gsG" secondAttribute="trailing" constant="15" id="Kdp-ta-pBz"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="G8D-x5-oKE" secondAttribute="bottom" constant="17" id="PWg-1q-6Lm"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="leading" secondItem="2r6-9P-bWA" secondAttribute="leadingMargin" id="SfL-nf-E4U"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="top" secondItem="G8D-x5-oKE" secondAttribute="top" id="TEo-Lk-gWa"/>
-                            <constraint firstItem="41P-G2-gsG" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="18" id="X3v-C4-Lff"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="ZP1-tp-at1"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="8" id="iIe-O6-np7"/>
-                            <constraint firstItem="G8D-x5-oKE" firstAttribute="trailing" secondItem="fBg-mO-BkM" secondAttribute="trailing" id="jdP-cY-UFU"/>
-                            <constraint firstItem="41P-G2-gsG" firstAttribute="leading" secondItem="fXb-1N-VEY" secondAttribute="leading" constant="238" id="luz-Ac-alE"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="QFD-my-fEB" secondAttribute="bottom" constant="-6" id="uQb-5a-1Va"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="leading" secondItem="fBg-mO-BkM" secondAttribute="leading" id="vqt-bC-fYZ"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="41P-G2-gsG" secondAttribute="bottom" constant="16" id="wEC-gC-rgt"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="centerY" secondItem="G8D-x5-oKE" secondAttribute="centerY" id="ziU-Mf-tfv"/>
+                            <constraint firstItem="sam-7l-N7I" firstAttribute="leading" secondItem="G8D-x5-oKE" secondAttribute="leading" id="22m-8S-bZx"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="8" id="59W-6c-kAF"/>
+                            <constraint firstItem="G8D-x5-oKE" firstAttribute="top" secondItem="sam-7l-N7I" secondAttribute="bottom" constant="24" id="G1d-gM-Pgz"/>
+                            <constraint firstItem="sam-7l-N7I" firstAttribute="top" secondItem="pC1-aU-N7A" secondAttribute="top" id="Kwv-iu-0Y7"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="trailing" secondItem="2r6-9P-bWA" secondAttribute="trailingMargin" id="LuR-Eb-dy0"/>
+                            <constraint firstItem="fXb-1N-VEY" firstAttribute="bottom" secondItem="pC1-aU-N7A" secondAttribute="bottom" constant="74" id="Nrz-bV-RzM"/>
+                            <constraint firstItem="fXb-1N-VEY" firstAttribute="bottom" secondItem="G8D-x5-oKE" secondAttribute="bottom" constant="21" id="R2V-fJ-4os"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="biM-B3-tw3" secondAttribute="leading" id="V17-Uo-b1D"/>
+                            <constraint firstItem="rOp-1Q-IHw" firstAttribute="top" secondItem="sam-7l-N7I" secondAttribute="bottom" constant="18" id="WNr-Md-XrP"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="trailing" secondItem="pC1-aU-N7A" secondAttribute="trailing" id="XQg-Tq-DOn"/>
+                            <constraint firstItem="sam-7l-N7I" firstAttribute="top" secondItem="fBg-mO-BkM" secondAttribute="bottom" constant="50" id="ZeL-SM-MtR"/>
+                            <constraint firstItem="fXb-1N-VEY" firstAttribute="bottom" secondItem="rOp-1Q-IHw" secondAttribute="bottom" constant="17" id="bK6-4K-T9s"/>
+                            <constraint firstItem="rOp-1Q-IHw" firstAttribute="leading" secondItem="G8D-x5-oKE" secondAttribute="trailing" constant="23" id="ck2-eI-qj7"/>
+                            <constraint firstItem="sam-7l-N7I" firstAttribute="trailing" secondItem="rOp-1Q-IHw" secondAttribute="trailing" id="hOj-kY-d65"/>
+                            <constraint firstItem="sam-7l-N7I" firstAttribute="leading" secondItem="fXb-1N-VEY" secondAttribute="leading" constant="39" id="j0m-xP-CIM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="artworkDesc" destination="fBg-mO-BkM" id="Nar-Wd-Fny"/>
                         <outlet property="audioSwitch" destination="G8D-x5-oKE" id="K1m-T8-E0q"/>
-                        <outlet property="contactLink" destination="QFD-my-fEB" id="UFu-hf-egU"/>
+                        <outlet property="contactLink" destination="pC1-aU-N7A" id="L8l-oE-XPB"/>
                         <outlet property="imageView" destination="biM-B3-tw3" id="hVn-kr-zJ4"/>
-                        <outlet property="locationLink" destination="Idt-ep-jey" id="aUw-pJ-P05"/>
+                        <outlet property="locationLink" destination="sam-7l-N7I" id="aul-tg-8oZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kd7-rA-WIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -190,12 +181,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="location.north.line.fill" catalog="system" width="82" height="128"/>
+        <image name="speaker.wave.2" catalog="system" width="128" height="90"/>
         <image name="tv.music.note.fill" catalog="system" width="128" height="97"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
