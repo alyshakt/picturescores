@@ -12,7 +12,7 @@
         <scene sceneID="UN8-1w-8Xb">
             <objects>
                 <tableViewController modalTransitionStyle="partialCurl" id="uUd-jk-z5a" customClass="ViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="WJt-U6-5tP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="center" directionalLockEnabled="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="WJt-U6-5tP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,7 +92,7 @@
         <!--Detail-->
         <scene sceneID="2fV-2B-XGL">
             <objects>
-                <viewController storyboardIdentifier="Detail" title="Detail" modalTransitionStyle="partialCurl" id="BjT-sJ-PH8" customClass="DetailViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" title="Detail" modalTransitionStyle="partialCurl" interfaceStyle="light" id="BjT-sJ-PH8" customClass="DetailViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2r6-9P-bWA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -178,6 +178,7 @@
                             <constraint firstItem="sam-7l-N7I" firstAttribute="leading" secondItem="fXb-1N-VEY" secondAttribute="leading" constant="39" id="j0m-xP-CIM"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="artworkDesc" destination="fBg-mO-BkM" id="Nar-Wd-Fny"/>
                         <outlet property="audioSwitch" destination="G8D-x5-oKE" id="K1m-T8-E0q"/>
@@ -191,6 +192,7 @@
             <point key="canvasLocation" x="1472.4637681159422" y="-593.97321428571422"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="location.north.line.fill" catalog="system" width="82" height="128"/>

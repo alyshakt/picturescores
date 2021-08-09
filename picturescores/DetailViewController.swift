@@ -80,7 +80,7 @@ class DetailViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    @IBAction func switchChanged(_ sender: Any) {
+    @IBAction func switchChanged(_ sender: UISwitch) {
         if audioSwitch.isOn {
             MusicPlayer.shared.stopBackgroundMusic()
             audioSwitch.setOn(false, animated:true)
