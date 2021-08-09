@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
         artworkDesc.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
 //        locationLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
         contactLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         navigationController?.navigationBar.prefersLargeTitles = false
         let pictureName = selectedImage?.description.replacingOccurrences(of: prefix, with: "").replacingOccurrences(of: suffix, with: "")
         title = pictureName
@@ -67,20 +67,17 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnTap = false
     }
     
-//    @objc func shareTapped() {
-//        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
-//            print("No image found")
-//            return
-//        }
-//        guard let location = locationLink.text else {
-//            print("No location found")
-//            return
-//        }
-//
-//        let vc = UIActivityViewController(activityItems: [image, location], applicationActivities: [])
-//        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
-//        present(vc, animated: true)
-//    }
+    @objc func shareTapped() {
+        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
+            print("No image found")
+            return
+        }
+        let textToSend = "\(artworkTitle ?? "") by Adam Michael Terry"
+
+        let vc = UIActivityViewController(activityItems: [image, textToSend], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
+    }
     
     @IBAction func switchChanged(_ sender: Any) {
         if audioSwitch.isOn {
@@ -132,6 +129,7 @@ class DetailViewController: UIViewController {
     private func getLocationCoords(artworkName: String)-> UIButton{
         let lowerTitle = artworkName.lowercased()
         var coords = "40.057357,-109.3932191"
+        
         if lowerTitle.contains("1"){
             coords = "40.057357,-109.3932191"
         }
@@ -148,12 +146,6 @@ class DetailViewController: UIViewController {
             coords = "40.057357,-109.3932191"
         }
         if( lowerTitle.contains("6")){
-            coords = "40.057357,-109.3932191"
-        }
-        if( lowerTitle.contains("7")){
-            coords = "40.057357,-109.3932191"
-        }
-        if( lowerTitle.contains("8")){
             coords = "40.057357,-109.3932191"
         }
         locationLink.isUserInteractionEnabled = true
