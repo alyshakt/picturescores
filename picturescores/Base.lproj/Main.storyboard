@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGg-zS-QRk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UN8-1w-8Xb">
+            <objects>
+                <tableViewController modalTransitionStyle="partialCurl" id="uUd-jk-z5a" customClass="ViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="WJt-U6-5tP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Picture" textLabel="joT-XD-PIS" imageView="JTh-d9-cBT" style="IBUITableViewCellStyleDefault" id="6gc-nS-w33">
+                                <rect key="frame" x="20" y="49.5" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6gc-nS-w33" id="pF3-Hq-1cs">
+                                    <rect key="frame" x="0.0" y="0.0" width="344.5" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="joT-XD-PIS">
+                                            <rect key="frame" x="60.5" y="0.0" width="276" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="20"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JTh-d9-cBT">
+                                            <rect key="frame" x="15" y="15.5" width="30.5" height="23"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <imageReference key="image" image="tv.music.note.fill" catalog="system" symbolScale="large"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uUd-jk-z5a" id="fuI-1S-o4F"/>
+                            <outlet property="delegate" destination="uUd-jk-z5a" id="RNL-w8-XQr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2cm-Xs-qLL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BY8-YP-pxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="-593.30357142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="giz-tJ-JMQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="JGg-zS-QRk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lMK-of-lpW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XXe-m2-kal">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="uUd-jk-z5a" kind="relationship" relationship="rootViewController" id="Isa-mO-AMs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzc-Np-ajR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149.27536231884059" y="-593.30357142857144"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="2fV-2B-XGL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd7-rA-WIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Detail" title="Detail" modalTransitionStyle="partialCurl" id="BjT-sJ-PH8" customClass="DetailViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2r6-9P-bWA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="biM-B3-tw3">
+                                <rect key="frame" x="0.0" y="0.0" width="413" height="567"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" playsSound="YES"/>
+                                </accessibility>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-ep-jey">
+                                <rect key="frame" x="20" y="758" width="373" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="CNS-ih-d9Q"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="locationLink">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-my-fEB">
+                                <rect key="frame" x="20" y="803" width="373" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="4QY-7t-xvm"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="contactLink">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-mO-BkM">
+                                <rect key="frame" x="20" y="575" width="373" height="119"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Artwork Title">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="FranklinGothicLTPro-CnDm"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fXb-1N-VEY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QFD-my-fEB" firstAttribute="top" secondItem="Idt-ep-jey" secondAttribute="bottom" id="E8X-pK-hXb"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="trailing" secondItem="QFD-my-fEB" secondAttribute="trailing" id="MPk-wV-bEZ"/>
+                            <constraint firstItem="fXb-1N-VEY" firstAttribute="bottom" secondItem="QFD-my-fEB" secondAttribute="bottom" constant="21" id="MQP-fe-JYB"/>
+                            <constraint firstItem="QFD-my-fEB" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="PYd-kj-dto"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="SWB-PA-onM"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="Idt-ep-jey" secondAttribute="leading" id="Tro-eU-5g0"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="X0s-i0-FVM"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="2r6-9P-bWA" secondAttribute="leadingMargin" id="Z7Q-Dx-4Jt"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="top" secondItem="fBg-mO-BkM" secondAttribute="bottom" constant="64" id="bvd-0R-t22"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="jam-CY-Iae"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="8" id="luI-93-PYX"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="trailing" secondItem="Idt-ep-jey" secondAttribute="trailing" id="mf0-vj-vgs"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="leading" secondItem="QFD-my-fEB" secondAttribute="leading" id="qRr-vJ-g8A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artworkDesc" destination="fBg-mO-BkM" id="Nar-Wd-Fny"/>
+                        <outlet property="contactLink" destination="QFD-my-fEB" id="UFu-hf-egU"/>
+                        <outlet property="imageView" destination="biM-B3-tw3" id="hVn-kr-zJ4"/>
+                        <outlet property="locationLink" destination="Idt-ep-jey" id="aUw-pJ-P05"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1473.913043478261" y="-593.30357142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tv.music.note.fill" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
