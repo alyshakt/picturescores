@@ -31,8 +31,7 @@ class DetailViewController: UIViewController {
         contactLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         navigationController?.navigationBar.prefersLargeTitles = false
-        let pictureName = selectedImage?.description.replacingOccurrences(of: prefix, with: "").replacingOccurrences(of: suffix, with: "")
-        title = pictureName
+
         artworkTitle = getArtworkTitle()
         MusicPlayer.shared.startBackgroundMusic(artworkTitle: artworkTitle!)
             //getTitle(pictureName: pictureName!)
