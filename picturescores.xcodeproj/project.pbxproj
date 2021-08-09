@@ -13,13 +13,19 @@
 		62318D7226C08CE60085B145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62318D7026C08CE60085B145 /* Main.storyboard */; };
 		62318D7426C08CE70085B145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62318D7326C08CE70085B145 /* Assets.xcassets */; };
 		62318D7726C08CE70085B145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62318D7526C08CE70085B145 /* LaunchScreen.storyboard */; };
-		62318D8526C08D910085B145 /* AMT-Fantasy Canyon 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 62318D7F26C08D910085B145 /* AMT-Fantasy Canyon 1.png */; };
-		62318D8626C08D910085B145 /* AMT-Fantasy Canyon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 62318D8026C08D910085B145 /* AMT-Fantasy Canyon 3.png */; };
-		62318D8726C08D910085B145 /* AMT-Fantasy Canyon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 62318D8126C08D910085B145 /* AMT-Fantasy Canyon 2.png */; };
-		62318D8826C08D910085B145 /* AMT-Fantasy Canyon 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 62318D8226C08D910085B145 /* AMT-Fantasy Canyon 6.png */; };
-		62318D8926C08D910085B145 /* AMT-Fantasy Canyon 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 62318D8326C08D910085B145 /* AMT-Fantasy Canyon 5.png */; };
-		62318D8A26C08D910085B145 /* AMT-Fantasy Canyon 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 62318D8426C08D910085B145 /* AMT-Fantasy Canyon 4.png */; };
 		62318D8C26C08DB40085B145 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62318D8B26C08DB40085B145 /* DetailViewController.swift */; };
+		62A8E1FA26C0B6E000D10AF7 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8E1F926C0B6E000D10AF7 /* MusicPlayer.swift */; };
+		62A8E21D26C0B9C600D10AF7 /* AMT-Fantasy Canyon 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E21726C0B9C600D10AF7 /* AMT-Fantasy Canyon 1.png */; };
+		62A8E21E26C0B9C600D10AF7 /* AMT-Fantasy Canyon 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E21826C0B9C600D10AF7 /* AMT-Fantasy Canyon 3.png */; };
+		62A8E21F26C0B9C600D10AF7 /* AMT-Fantasy Canyon 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E21926C0B9C600D10AF7 /* AMT-Fantasy Canyon 2.png */; };
+		62A8E22026C0B9C600D10AF7 /* AMT-Fantasy Canyon 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E21A26C0B9C600D10AF7 /* AMT-Fantasy Canyon 6.png */; };
+		62A8E22126C0B9C600D10AF7 /* AMT-Fantasy Canyon 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E21B26C0B9C600D10AF7 /* AMT-Fantasy Canyon 5.png */; };
+		62A8E22226C0B9C600D10AF7 /* AMT-Fantasy Canyon 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E21C26C0B9C600D10AF7 /* AMT-Fantasy Canyon 4.png */; };
+		62A8E22426C0B9E700D10AF7 /* Fantasy Canyon 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E22326C0B9E700D10AF7 /* Fantasy Canyon 1.mp3 */; };
+		62A8E22726C0BAA000D10AF7 /* Fantasy Canyon 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E22526C0BAA000D10AF7 /* Fantasy Canyon 2.mp3 */; };
+		62A8E22826C0BAA000D10AF7 /* Fantasy Canyon 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E22626C0BAA000D10AF7 /* Fantasy Canyon 3.mp3 */; };
+		62A8E22A26C0BAF000D10AF7 /* Fantasy Canyon 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E22926C0BAF000D10AF7 /* Fantasy Canyon 4.mp3 */; };
+		62A8E22C26C0BAFD00D10AF7 /* Fantasy Canyon 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 62A8E22B26C0BAFD00D10AF7 /* Fantasy Canyon 5.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +37,19 @@
 		62318D7326C08CE70085B145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62318D7626C08CE70085B145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62318D7826C08CE70085B145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62318D7F26C08D910085B145 /* AMT-Fantasy Canyon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 1.png"; sourceTree = "<group>"; };
-		62318D8026C08D910085B145 /* AMT-Fantasy Canyon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 3.png"; sourceTree = "<group>"; };
-		62318D8126C08D910085B145 /* AMT-Fantasy Canyon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 2.png"; sourceTree = "<group>"; };
-		62318D8226C08D910085B145 /* AMT-Fantasy Canyon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 6.png"; sourceTree = "<group>"; };
-		62318D8326C08D910085B145 /* AMT-Fantasy Canyon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 5.png"; sourceTree = "<group>"; };
-		62318D8426C08D910085B145 /* AMT-Fantasy Canyon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 4.png"; sourceTree = "<group>"; };
 		62318D8B26C08DB40085B145 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		62A8E1F926C0B6E000D10AF7 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		62A8E21726C0B9C600D10AF7 /* AMT-Fantasy Canyon 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 1.png"; sourceTree = "<group>"; };
+		62A8E21826C0B9C600D10AF7 /* AMT-Fantasy Canyon 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 3.png"; sourceTree = "<group>"; };
+		62A8E21926C0B9C600D10AF7 /* AMT-Fantasy Canyon 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 2.png"; sourceTree = "<group>"; };
+		62A8E21A26C0B9C600D10AF7 /* AMT-Fantasy Canyon 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 6.png"; sourceTree = "<group>"; };
+		62A8E21B26C0B9C600D10AF7 /* AMT-Fantasy Canyon 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 5.png"; sourceTree = "<group>"; };
+		62A8E21C26C0B9C600D10AF7 /* AMT-Fantasy Canyon 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AMT-Fantasy Canyon 4.png"; sourceTree = "<group>"; };
+		62A8E22326C0B9E700D10AF7 /* Fantasy Canyon 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fantasy Canyon 1.mp3"; sourceTree = "<group>"; };
+		62A8E22526C0BAA000D10AF7 /* Fantasy Canyon 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fantasy Canyon 2.mp3"; sourceTree = "<group>"; };
+		62A8E22626C0BAA000D10AF7 /* Fantasy Canyon 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fantasy Canyon 3.mp3"; sourceTree = "<group>"; };
+		62A8E22926C0BAF000D10AF7 /* Fantasy Canyon 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fantasy Canyon 4.mp3"; sourceTree = "<group>"; };
+		62A8E22B26C0BAFD00D10AF7 /* Fantasy Canyon 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fantasy Canyon 5.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,28 +82,34 @@
 		62318D6926C08CE60085B145 /* picturescores */ = {
 			isa = PBXGroup;
 			children = (
+				62A8E21626C0B9C600D10AF7 /* Contents */,
 				62318D6A26C08CE60085B145 /* AppDelegate.swift */,
 				62318D6C26C08CE60085B145 /* SceneDelegate.swift */,
 				62318D6E26C08CE60085B145 /* ViewController.swift */,
 				62318D8B26C08DB40085B145 /* DetailViewController.swift */,
 				62318D7026C08CE60085B145 /* Main.storyboard */,
-				62318D7E26C08D910085B145 /* Contents */,
 				62318D7326C08CE70085B145 /* Assets.xcassets */,
 				62318D7526C08CE70085B145 /* LaunchScreen.storyboard */,
 				62318D7826C08CE70085B145 /* Info.plist */,
+				62A8E1F926C0B6E000D10AF7 /* MusicPlayer.swift */,
 			);
 			path = picturescores;
 			sourceTree = "<group>";
 		};
-		62318D7E26C08D910085B145 /* Contents */ = {
+		62A8E21626C0B9C600D10AF7 /* Contents */ = {
 			isa = PBXGroup;
 			children = (
-				62318D7F26C08D910085B145 /* AMT-Fantasy Canyon 1.png */,
-				62318D8026C08D910085B145 /* AMT-Fantasy Canyon 3.png */,
-				62318D8126C08D910085B145 /* AMT-Fantasy Canyon 2.png */,
-				62318D8226C08D910085B145 /* AMT-Fantasy Canyon 6.png */,
-				62318D8326C08D910085B145 /* AMT-Fantasy Canyon 5.png */,
-				62318D8426C08D910085B145 /* AMT-Fantasy Canyon 4.png */,
+				62A8E22326C0B9E700D10AF7 /* Fantasy Canyon 1.mp3 */,
+				62A8E22526C0BAA000D10AF7 /* Fantasy Canyon 2.mp3 */,
+				62A8E22626C0BAA000D10AF7 /* Fantasy Canyon 3.mp3 */,
+				62A8E22926C0BAF000D10AF7 /* Fantasy Canyon 4.mp3 */,
+				62A8E22B26C0BAFD00D10AF7 /* Fantasy Canyon 5.mp3 */,
+				62A8E21726C0B9C600D10AF7 /* AMT-Fantasy Canyon 1.png */,
+				62A8E21826C0B9C600D10AF7 /* AMT-Fantasy Canyon 3.png */,
+				62A8E21926C0B9C600D10AF7 /* AMT-Fantasy Canyon 2.png */,
+				62A8E21A26C0B9C600D10AF7 /* AMT-Fantasy Canyon 6.png */,
+				62A8E21B26C0B9C600D10AF7 /* AMT-Fantasy Canyon 5.png */,
+				62A8E21C26C0B9C600D10AF7 /* AMT-Fantasy Canyon 4.png */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
@@ -154,14 +172,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				62318D7726C08CE70085B145 /* LaunchScreen.storyboard in Resources */,
-				62318D8526C08D910085B145 /* AMT-Fantasy Canyon 1.png in Resources */,
-				62318D8726C08D910085B145 /* AMT-Fantasy Canyon 2.png in Resources */,
+				62A8E21D26C0B9C600D10AF7 /* AMT-Fantasy Canyon 1.png in Resources */,
+				62A8E22726C0BAA000D10AF7 /* Fantasy Canyon 2.mp3 in Resources */,
+				62A8E21F26C0B9C600D10AF7 /* AMT-Fantasy Canyon 2.png in Resources */,
 				62318D7426C08CE70085B145 /* Assets.xcassets in Resources */,
-				62318D8826C08D910085B145 /* AMT-Fantasy Canyon 6.png in Resources */,
-				62318D8926C08D910085B145 /* AMT-Fantasy Canyon 5.png in Resources */,
-				62318D8626C08D910085B145 /* AMT-Fantasy Canyon 3.png in Resources */,
+				62A8E22026C0B9C600D10AF7 /* AMT-Fantasy Canyon 6.png in Resources */,
+				62A8E22A26C0BAF000D10AF7 /* Fantasy Canyon 4.mp3 in Resources */,
+				62A8E22126C0B9C600D10AF7 /* AMT-Fantasy Canyon 5.png in Resources */,
+				62A8E22826C0BAA000D10AF7 /* Fantasy Canyon 3.mp3 in Resources */,
+				62A8E21E26C0B9C600D10AF7 /* AMT-Fantasy Canyon 3.png in Resources */,
 				62318D7226C08CE60085B145 /* Main.storyboard in Resources */,
-				62318D8A26C08D910085B145 /* AMT-Fantasy Canyon 4.png in Resources */,
+				62A8E22C26C0BAFD00D10AF7 /* Fantasy Canyon 5.mp3 in Resources */,
+				62A8E22226C0B9C600D10AF7 /* AMT-Fantasy Canyon 4.png in Resources */,
+				62A8E22426C0B9E700D10AF7 /* Fantasy Canyon 1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +198,7 @@
 				62318D6F26C08CE60085B145 /* ViewController.swift in Sources */,
 				62318D6B26C08CE60085B145 /* AppDelegate.swift in Sources */,
 				62318D6D26C08CE60085B145 /* SceneDelegate.swift in Sources */,
+				62A8E1FA26C0B6E000D10AF7 /* MusicPlayer.swift in Sources */,
 				62318D8C26C08DB40085B145 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,6 +39,7 @@ class DetailViewController: UIViewController {
         let pictureName = selectedImage?.description.replacingOccurrences(of: prefix, with: "").replacingOccurrences(of: suffix, with: "")
         title = pictureName
         artworkTitle = pictureName
+        MusicPlayer.shared.startBackgroundMusic(artworkTitle: artworkTitle!)
             //getTitle(pictureName: pictureName!)
         // We can check that selectedImage has a value, and if so pull it out for usage; otherwise, do nothing.
         if let imageToLoad = selectedImage {
