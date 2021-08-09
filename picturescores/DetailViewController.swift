@@ -12,18 +12,13 @@ class DetailViewController: UIViewController {
     @IBOutlet var artworkDesc: UITextView!
     @IBOutlet var locationLink: UITextView!
     @IBOutlet var contactLink: UITextView!
-    
-    //    @IBOutlet var artworkDesc: UITextView!
-//    @IBOutlet var imageView: UIImageView!
-//    @IBOutlet var locationLink: UITextView!
-//    @IBOutlet var contactLink: UITextView!
+    @IBOutlet var audioSwitch: UISwitch!
     
     
     var artworkTitle: String?
     var selectedImage: String?
     var prefix = "AMT-"
     var suffix = ".png"
-    
     /*Load the detail view controller layout from our storyboard.
      Set its selectedImage property to be the correct item from the pictures array.
      Show the new view controller.
@@ -34,11 +29,11 @@ class DetailViewController: UIViewController {
         artworkDesc.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
         locationLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
         contactLink.textContainerInset = UIEdgeInsets(top:0,left:20,bottom:0,right:10)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         navigationController?.navigationBar.prefersLargeTitles = false
         let pictureName = selectedImage?.description.replacingOccurrences(of: prefix, with: "").replacingOccurrences(of: suffix, with: "")
         title = pictureName
-        artworkTitle = pictureName
+        artworkTitle = getArtworkTitle()
         MusicPlayer.shared.startBackgroundMusic(artworkTitle: artworkTitle!)
             //getTitle(pictureName: pictureName!)
         // We can check that selectedImage has a value, and if so pull it out for usage; otherwise, do nothing.
@@ -53,8 +48,15 @@ class DetailViewController: UIViewController {
         artworkDesc.accessibilityIdentifier = "Artwork description"
         locationLink.accessibilityIdentifier = "GPS location link"
         contactLink.accessibilityIdentifier = "Contact link"
+        audioSwitch.accessibilityIdentifier = "Audio On/Off"
+        audioSwitch.addTarget(self, action: #selector(stateChanged), for: .valueChanged)
     }
     
+    func getArtworkTitle()-> String{
+        let pictureName = selectedImage?.description.replacingOccurrences(of: prefix, with: "").replacingOccurrences(of: suffix, with: "")
+        title = pictureName
+        return pictureName!
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnTap = true
@@ -80,38 +82,28 @@ class DetailViewController: UIViewController {
         present(vc, animated: true)
     }
     
-//    private func getMusic(pictureName: String) -> String{
-//        var artworkName = "No Music Found"
-//
-//        if pictureName.lowercased().contains("1"){
-//            artworkName = "Dornn Harris"
-//        }
-//        if pictureName.lowercased().contains("2"){
-//            artworkName = "Brianna Davis"
-//        }
-//        if pictureName.lowercased().contains("3"){
-//            artworkName = "Oksana Gritsaeva"
-//        }
-//        if( pictureName.lowercased().contains("4")){
-//            artworkName = "Samantha (Moyer) Lange"
-//        }
-//        if( pictureName.lowercased().contains("5")){
-//            artworkName = "Jessica Bryan"
-//        }
-//        if( pictureName.lowercased().contains("6")){
-//            artworkName = "Lana Abuhudra"
-//        }
-//        if( pictureName.lowercased().contains("7")){
-//            artworkName = "Becca Barratt"
-//        }
-//        return artworkName
-//    }
-
+    @IBAction func switchChanged(_ sender: Any) {
+        if audioSwitch.isOn {
+            MusicPlayer.shared.stopBackgroundMusic()
+            audioSwitch.setOn(false, animated:true)
+        } else {
+            audioSwitch.setOn(true, animated:true)
+        }
+    }
+    
+    @objc func stateChanged(switchState: UISwitch, artworkTitle: String) {
+        if switchState.isOn {
+            MusicPlayer.shared.startBackgroundMusic(artworkTitle: getArtworkTitle())
+        } else {
+            MusicPlayer.shared.stopBackgroundMusic()
+        }
+    }
+    
     private func getDescription(artworkTitle: String) -> UITextView{
         let lowerTitle = artworkTitle.lowercased()
         var intro = "No Decription Found"
         if lowerTitle.contains("1"){
-            intro = "\(artworkTitle) is a Software Developer at Medici Ventures"
+            intro = "\(artworkTitle) is a mythological soundscape with a percussive foot-trail that guides you through synthesizer crevices, woodwind hoodoos and archaic bassline phrases. \n A pre-conceived multi media work, Fantasy Canyon was completed with medium format photography to picture score the music. The esoteric canyon is located in the middle of the remote desert and desolate oil fields of Vernal, Utah. Shapes of sounds and melodic phrases combo and complement each other, stringing together a syntax of fantasy and reality... synthetic and acoustic."
         }
         if lowerTitle.contains("2"){
             intro = "\(artworkTitle) is an Integration Project Manager at SAP"

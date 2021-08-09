@@ -80,61 +80,41 @@
         <!--Detail-->
         <scene sceneID="2fV-2B-XGL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kd7-rA-WIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Detail" title="Detail" modalTransitionStyle="partialCurl" id="BjT-sJ-PH8" customClass="DetailViewController" customModule="picturescores" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2r6-9P-bWA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="biM-B3-tw3">
-                                <rect key="frame" x="0.0" y="0.0" width="413" height="567"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="biM-B3-tw3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="491"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" playsSound="YES"/>
                                 </accessibility>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-ep-jey">
-                                <rect key="frame" x="20" y="758" width="373" height="45"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-my-fEB">
+                                <rect key="frame" x="20" y="830" width="265" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="CNS-ih-d9Q"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="locationLink">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-my-fEB">
-                                <rect key="frame" x="20" y="803" width="373" height="38"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="4QY-7t-xvm"/>
+                                    <constraint firstAttribute="height" constant="38" id="gBO-el-Xlv"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="contactLink">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-mO-BkM">
-                                <rect key="frame" x="20" y="575" width="373" height="119"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-mO-BkM">
+                                <rect key="frame" x="20" y="547" width="374" height="275"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Artwork Title">
                                         <attributes>
@@ -146,39 +126,75 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Audio" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41P-G2-gsG">
+                                <rect key="frame" x="238" y="509" width="92" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-ep-jey">
+                                <rect key="frame" x="20" y="499" width="250" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.56751503859999997" green="0.76649333519999996" blue="0.69942153389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="locationLink">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="FranklinGothicLTPro-CnDm"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <switch clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="top" on="YES" title="Audio" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-x5-oKE">
+                                <rect key="frame" x="345" y="499" width="51" height="31"/>
+                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="onTintColor" red="0.0" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fXb-1N-VEY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QFD-my-fEB" firstAttribute="top" secondItem="Idt-ep-jey" secondAttribute="bottom" id="E8X-pK-hXb"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="trailing" secondItem="QFD-my-fEB" secondAttribute="trailing" id="MPk-wV-bEZ"/>
-                            <constraint firstItem="fXb-1N-VEY" firstAttribute="bottom" secondItem="QFD-my-fEB" secondAttribute="bottom" constant="21" id="MQP-fe-JYB"/>
-                            <constraint firstItem="QFD-my-fEB" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="PYd-kj-dto"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="SWB-PA-onM"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="Idt-ep-jey" secondAttribute="leading" id="Tro-eU-5g0"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="X0s-i0-FVM"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="2r6-9P-bWA" secondAttribute="leadingMargin" id="Z7Q-Dx-4Jt"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="top" secondItem="fBg-mO-BkM" secondAttribute="bottom" constant="64" id="bvd-0R-t22"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="jam-CY-Iae"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="8" id="luI-93-PYX"/>
-                            <constraint firstItem="fBg-mO-BkM" firstAttribute="trailing" secondItem="Idt-ep-jey" secondAttribute="trailing" id="mf0-vj-vgs"/>
-                            <constraint firstItem="Idt-ep-jey" firstAttribute="leading" secondItem="QFD-my-fEB" secondAttribute="leading" id="qRr-vJ-g8A"/>
+                            <constraint firstItem="G8D-x5-oKE" firstAttribute="leading" secondItem="Idt-ep-jey" secondAttribute="trailing" constant="75" id="1mK-CZ-oyr"/>
+                            <constraint firstItem="fXb-1N-VEY" firstAttribute="trailing" secondItem="QFD-my-fEB" secondAttribute="trailing" constant="129" id="5ud-rs-srC"/>
+                            <constraint firstItem="QFD-my-fEB" firstAttribute="top" secondItem="fBg-mO-BkM" secondAttribute="bottom" constant="8" id="Ce3-bd-nSD"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="leading" secondItem="QFD-my-fEB" secondAttribute="leading" id="GgM-es-x9n"/>
+                            <constraint firstItem="G8D-x5-oKE" firstAttribute="leading" secondItem="41P-G2-gsG" secondAttribute="trailing" constant="15" id="Kdp-ta-pBz"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="G8D-x5-oKE" secondAttribute="bottom" constant="17" id="PWg-1q-6Lm"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="leading" secondItem="2r6-9P-bWA" secondAttribute="leadingMargin" id="SfL-nf-E4U"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="top" secondItem="G8D-x5-oKE" secondAttribute="top" id="TEo-Lk-gWa"/>
+                            <constraint firstItem="41P-G2-gsG" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="18" id="X3v-C4-Lff"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="centerX" secondItem="biM-B3-tw3" secondAttribute="centerX" id="ZP1-tp-at1"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="top" secondItem="biM-B3-tw3" secondAttribute="bottom" constant="8" id="iIe-O6-np7"/>
+                            <constraint firstItem="G8D-x5-oKE" firstAttribute="trailing" secondItem="fBg-mO-BkM" secondAttribute="trailing" id="jdP-cY-UFU"/>
+                            <constraint firstItem="41P-G2-gsG" firstAttribute="leading" secondItem="fXb-1N-VEY" secondAttribute="leading" constant="238" id="luz-Ac-alE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="QFD-my-fEB" secondAttribute="bottom" constant="-6" id="uQb-5a-1Va"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="leading" secondItem="fBg-mO-BkM" secondAttribute="leading" id="vqt-bC-fYZ"/>
+                            <constraint firstItem="fBg-mO-BkM" firstAttribute="top" secondItem="41P-G2-gsG" secondAttribute="bottom" constant="16" id="wEC-gC-rgt"/>
+                            <constraint firstItem="Idt-ep-jey" firstAttribute="centerY" secondItem="G8D-x5-oKE" secondAttribute="centerY" id="ziU-Mf-tfv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="artworkDesc" destination="fBg-mO-BkM" id="Nar-Wd-Fny"/>
+                        <outlet property="audioSwitch" destination="G8D-x5-oKE" id="K1m-T8-E0q"/>
                         <outlet property="contactLink" destination="QFD-my-fEB" id="UFu-hf-egU"/>
                         <outlet property="imageView" destination="biM-B3-tw3" id="hVn-kr-zJ4"/>
                         <outlet property="locationLink" destination="Idt-ep-jey" id="aUw-pJ-P05"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd7-rA-WIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473.913043478261" y="-593.30357142857144"/>
+            <point key="canvasLocation" x="1472.4637681159422" y="-593.97321428571422"/>
         </scene>
     </scenes>
     <resources>
         <image name="tv.music.note.fill" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
