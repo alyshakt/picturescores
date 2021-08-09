@@ -71,7 +71,9 @@ class DetailViewController: UIViewController {
             print("No image found")
             return
         }
-        let textToSend = "\(artworkTitle ?? "") by Adam Michael Terry"
+        let desc = getDescriptionText(artworkTitle: artworkTitle!)
+        let contactlink = getContactText(artworkTitle: artworkTitle!)
+        let textToSend = "\(artworkTitle ?? "") by Adam Michael Terry \n \(desc) \n \(contactlink)"
 
         let vc = UIActivityViewController(activityItems: [image, textToSend], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
@@ -96,6 +98,13 @@ class DetailViewController: UIViewController {
     }
     
     private func getDescription(artworkTitle: String) -> UITextView{
+        artworkDesc.text = getDescriptionText(artworkTitle: artworkTitle)
+        artworkDesc.isUserInteractionEnabled = true
+        artworkDesc.isEditable = false
+        return artworkDesc
+    }
+    
+    private func getDescriptionText(artworkTitle: String) -> String{
         let lowerTitle = artworkTitle.lowercased()
         var intro = "No Decription Found"
         if lowerTitle.contains("1"){
@@ -119,10 +128,7 @@ class DetailViewController: UIViewController {
         else if( lowerTitle.contains("7")){
             intro = "\(artworkTitle) is a Enterprise Employee Experience Product Specialist at Qualtrics"
         }
-        artworkDesc.text = intro
-        artworkDesc.isUserInteractionEnabled = true
-        artworkDesc.isEditable = false
-        return artworkDesc
+        return intro
     }
 
     private func getLocationCoords(artworkName: String)-> UIButton{
@@ -161,12 +167,16 @@ class DetailViewController: UIViewController {
 
     private func getContactInfo(artworkTitle: String)-> UITextView{
         contactLink.isUserInteractionEnabled = true
+        contactLink.attributedText = getContactText(artworkTitle: artworkTitle)
+        return contactLink
+    }
+    
+    private func getContactText(artworkTitle: String) -> NSAttributedString{
         let contactString = "Inquire @ Modern West Fine Art"
         let stringLength = contactString.count
         let contactAttString = NSMutableAttributedString(string: contactString)
         contactAttString.addAttribute(.link, value: "https://www.modernwestfineart.com/search/?search=Adam+Terry", range: NSRange(location: 0, length: stringLength))
-        contactLink.attributedText = contactAttString
-        return contactLink
+        return contactAttString
     }
     
     func contactLink(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
